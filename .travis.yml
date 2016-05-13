@@ -1,4 +1,4 @@
-sudo: required
+install: gem install rails
 language: ruby
 rvm:
  - 2.2
