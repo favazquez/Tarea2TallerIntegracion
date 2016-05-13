@@ -1,5 +1,6 @@
 rvm:
   - 2.2
+run: "rake db:create:all"
 run: "rake db:migrate"
 deploy:
   provider: heroku
