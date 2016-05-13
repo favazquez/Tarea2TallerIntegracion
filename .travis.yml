@@ -1,4 +1,2 @@
-language: ruby
-install: gem install rails
-rvm:
-  - 2.2
+deploy:
+  provider: heroku
