@@ -10,5 +10,7 @@ class InstagramController < ApplicationController
     tag = params[:tag].to_s
   	access_token = params[:access_token].to_s
     tag_data= HTTParty.get('https://api.instagram.com/v1/tags/'+tag+'?access_token='+access_token)
+    hola= JSON.parse tag_data
+    render json: {tagdata: hola}
   end
 end
