@@ -1,6 +1,9 @@
 class InstagramController < ApplicationController
 skip_before_action :verify_authenticity_token
   def search
-    head 69
+    unless params[:tag] and params[:access_token]
+	    head 400
+		  return
+		  end
   end
 end
