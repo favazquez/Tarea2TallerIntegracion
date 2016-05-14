@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'instagram/search'
+  post 'instagram/search'
 
   root 'welcome#index'
 end
