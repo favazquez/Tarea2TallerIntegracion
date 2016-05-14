@@ -7,7 +7,5 @@ class InstagramController < ApplicationController
 	    head 400
 		  return
 		end
-    tag = params[:tag]
-  	access_token = params[:access_token]
   end
 end
