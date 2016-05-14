@@ -5,7 +5,5 @@ skip_before_action :verify_authenticity_token
 	    head 400
 		  return
 		end
-    head 200
-    return
   end
 end
